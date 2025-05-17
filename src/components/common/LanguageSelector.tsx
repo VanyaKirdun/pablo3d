@@ -14,6 +14,8 @@ interface Language {
   name: string;
 }
 
+const focus = 'outline-none ring-2 ring-offset-2 ring-indigo-500'
+
 function FlagIcon({ countryCode = "" }: FlagIconProps) {
 
   if (countryCode === "en") {
@@ -29,7 +31,7 @@ function FlagIcon({ countryCode = "" }: FlagIconProps) {
 
 export const LanguageSelector = () => {
   const { i18n } = useTranslation();
-  const [isOpen, setIsOpen] = useState<boolean>(true);
+  const [isOpen, setIsOpen] = useState<boolean>(false);
   const handleLanguageChange = async (language: Language) => {
     await i18n.changeLanguage(language.key);
     setIsOpen(false);
@@ -45,13 +47,14 @@ export const LanguageSelector = () => {
   const LANGUAGE_SELECTOR_ID = 'language-selector';
   useEffect(() => {
 
-    // biome-ignore lint/suspicious/noExplicitAny: <explanation>
-    const handleWindowClick = (event: any) => {
-      const target = event.target.closest('button');
-      if (target && target.id === LANGUAGE_SELECTOR_ID) {
-        return;
+    const handleWindowClick = (event: MouseEvent | null) => {
+      if (event && event.target instanceof HTMLElement) {
+        const target = event.target.closest('button');
+        if (target && target.id === LANGUAGE_SELECTOR_ID) {
+          return;
+        }
+        setIsOpen(false);
       }
-      setIsOpen(false);
     }
     window.addEventListener('click', handleWindowClick)
     return () => {
@@ -68,7 +71,9 @@ export const LanguageSelector = () => {
       <button
         onClick={() => setIsOpen(!isOpen)}
         type="button"
-        className=" inline-flex items-center justify-center w-full rounded-md border border-[#93ADAA] shadow-sm px-4 py-2 bg-[#93ADAA] text-sm font-medium text-gray-700 hover:bg-[#7E9491] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+        className={cn("inline-flex items-center justify-center w-full rounded-md border border-[#93ADAA] shadow-sm px-4 py-2 bg-[#93ADAA] text-sm font-medium text-gray-700 hover:bg-[#7E9491]",
+          isOpen && focus
+        )}
         id={LANGUAGE_SELECTOR_ID}
         aria-haspopup="true"
         aria-expanded={isOpen}

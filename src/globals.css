@@ -3,10 +3,14 @@
 @import '@/assets/styles/backgrounds.css' layer(base);
 @import '@/assets/styles/inverse-radius.css' layer(base); */
 
+
 @import 'tailwindcss';
+@import "flowbite/src/themes/default";
 @plugin "tailwindcss-animate";
+@plugin "flowbite/plugin";
 
 @custom-variant dark (&:is(.dark *));
+@source "../node_modules/flowbite";
 
 @theme {
   --font-*: initial;
@@ -51,6 +55,10 @@
   --animate-accordion-up: accordion-up 0.2s ease-out;
 
   --shadow-0x1: inset 0 0 0 2px rgba(0, 0, 0, 0.06);
+  --translate-50%: translate(-50%, -50%);
+  --top-50%: top: calc(50% + 1px);
+  --left-50%:top: calc(50% + 1px);
+  --background-gray: hsl(var(--input));
 
   @keyframes accordion-down {
     from {

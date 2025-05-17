@@ -9,6 +9,7 @@ import "flag-icons"
 function App() {
 
   const Home = lazy(() => import("@/pages/home"));
+  const Examples = lazy(() => import("@/pages/examples"));
 
   return (
     <>
@@ -16,12 +17,18 @@ function App() {
         <Routes>
           {/* <Route path="*" element={<Notfound />} /> */}
           <Route path="/" element={<RootLayout />}>
-            <Route index element={<Suspense fallback={<LoadingAnimation />}>
-              <Home />
-            </Suspense>} />
-            {/* <Route path="blogs" element={<Blogs />} />
-            <Route path="contact" element={<Contact />} />
-            <Route path="*" element={<NoPage />} /> */}
+            <Route index element={
+              <Suspense fallback={<LoadingAnimation />}>
+                <Home />
+              </Suspense>
+            }
+            />
+            <Route path="/examples" element={
+              <Suspense fallback={<LoadingAnimation />}>
+                <Examples />
+              </Suspense>
+            }
+            />
           </Route>
         </Routes>
       </BrowserRouter>

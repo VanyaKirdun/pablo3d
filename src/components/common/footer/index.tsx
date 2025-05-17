@@ -1,4 +1,4 @@
-import { SocialBar } from "../socialBar";
+import { SocialBar } from "@/components/common/SocialBar";
 
 const Footer = () => {
   return (
