@@ -2,7 +2,7 @@ import { cn } from "@/utils/cn";
 import { mdiLoading } from "@mdi/js";
 import Icon from "@mdi/react";
 import { useTranslation } from 'react-i18next';
-import { useEffect, useState } from "react";
+import { useEffect, useLayoutEffect, useState } from "react";
 import styles from "./LanguageSelector.scss";
 
 interface FlagIconProps {
@@ -36,6 +36,15 @@ export const LanguageSelector = () => {
     await i18n.changeLanguage(language.key);
     setIsOpen(false);
   };
+
+  useLayoutEffect(() => {
+    function updateSize() {
+      setIsOpen(false)
+    }
+    window.addEventListener('resize', updateSize);
+    updateSize();
+    return () => window.removeEventListener('resize', updateSize);
+  }, []);
 
   const languages: Language[] = [
     { key: 'es', name: 'Spain' },

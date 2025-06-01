@@ -21,6 +21,9 @@
 		"paths": {
 			"@/*": ["./src/*"]
 		},
-		"allowSyntheticDefaultImports": true
+		"allowSyntheticDefaultImports": true,
+		"types": [
+      "vite/client",
+    ]
 	}
 }

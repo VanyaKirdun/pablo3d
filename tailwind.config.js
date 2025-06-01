@@ -114,6 +114,13 @@ export default {
 				".text-shadow-none": {
 					textShadow: "none",
 				},
+				".transform-left":{
+					transform: "translate(100%, 0)"
+				},
+				".transform-zero":{
+					transform: "translate(0, 0)"
+				},
+				
 			};
 
 			addUtilities(newUtilities, ["responsive", "hover"]);

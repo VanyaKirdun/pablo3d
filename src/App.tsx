@@ -23,7 +23,7 @@ function App() {
               </Suspense>
             }
             />
-            <Route path="/examples" element={
+            <Route path="/portfolio" element={
               <Suspense fallback={<LoadingAnimation />}>
                 <Examples />
               </Suspense>
