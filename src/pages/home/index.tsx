@@ -138,7 +138,7 @@ const Index = () => {
 
             </div>
             <div className="mt-6 m-auto space-y-6 w-full">
-              <p className="text-center text-2xl sm:text 1x1 text-black">
+              <p className="text-center text-2xl max-sm:text 1x1 text-black">
                 Один из самых популярных пластиков. Экологически чисты, быстроразлогаемый и биосовместим. Повсеместно используется для создания игрушек, сувениров и быстроразлогаемых вещей.
               </p>
             </div>
@@ -153,7 +153,7 @@ const Index = () => {
 
             </div>
             <div className="mt-6 m-auto space-y-6 w-full">
-              <p className="text-center text-2xl sm:text-base text-black">
+              <p className="text-center text-2xl max-sm:text-base text-black">
                 Пластик, используемый в инженерных целях. Имеет высокую ударопрочность, механическую прочность и жесткость. Обезпечивает долгоживучесть изделий и позволяет его реставрировать.
               </p>
             </div>
@@ -168,7 +168,7 @@ const Index = () => {
 
             </div>
             <div className="mt-6 m-auto space-y-6 w-full">
-              <p className="text-center text-2xl sm:text 1x1 text-black">
+              <p className="text-center text-2xl max-sm:text 1x1 text-black">
                 Высокопрочный, износостойкий материал, обладающий высокой температурой плавленияи абсолютно не токсичен и безвреден. Из-за чего его используют посеместно для создание бытовых вещей от посуды до тар для хранения химических веществ.
               </p>
             </div>
