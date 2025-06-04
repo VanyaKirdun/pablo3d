@@ -54,12 +54,12 @@ const Index = () => {
           </div>
         </div>
 
-        <div className="flex justify-between  max-sm:justify-center max-sm:m-auto max-sm:flex-col  w-full max-sm:w-12/12">
+        <div className="flex justify-between  max-sm:justify-center max-sm:m-auto max-sm:flex-col w-full max-sm:w-12/12">
           <TextImage className="h-[20vw] max-sm:h-[25vw] m-[10px]">
             <img className="w-full h-full object-cover" src={img3} alt="Random image" />
             <div className="absolute inset-0 bg-gray-700 opacity-60" />
             <TextImageContent>
-              <TextImageTitle>Моделируем</TextImageTitle>
+              <TextImageTitle className="max-md:text-3xl md:text-3xl lg:text-5xl">Моделируем</TextImageTitle>
               <TextImageDescription>Присылаете свою идею и мы создаем 3д модель. </TextImageDescription>
             </TextImageContent>
           </TextImage>
@@ -68,7 +68,7 @@ const Index = () => {
             <img className="h-64 w-full h-full object-cover" src={img4} alt="Random image" />
             <div className="absolute inset-0 bg-gray-700 opacity-60" />
             <TextImageContent>
-              <TextImageTitle>3D печать</TextImageTitle>
+              <TextImageTitle className="max-md:text-3xl md:text-3xl lg:text-5xl">3D печать</TextImageTitle>
               <TextImageDescription>Отправляем погдготовленную модель на печать.</TextImageDescription>
             </TextImageContent>
           </TextImage>
@@ -77,7 +77,7 @@ const Index = () => {
             <img className="h-64 w-full h-full object-cover" src={img5} alt="Random image" />
             <div className="absolute inset-0 bg-gray-700 opacity-60" />
             <TextImageContent>
-              <TextImageTitle>Готово</TextImageTitle>
+              <TextImageTitle className="max-md:text-3xl md:text-3xl lg:text-5xl">Готово</TextImageTitle>
               <TextImageDescription>Покраска и подготовка модели к отправке.</TextImageDescription>
             </TextImageContent>
           </TextImage>
@@ -98,7 +98,7 @@ const Index = () => {
             <img className="inset-0 w-full h-full object-cover" src={img6} alt="Random image" />
             <div className="absolute inset-0 bg-gray-700 opacity-60" />
             <TextImageContent>
-              <TextImageDescription className="text-3xl max-md:text-2xl max-sm:text-1xl">Консультируем на протяжении всех стадий работы. </TextImageDescription>
+              <TextImageDescription className="text-2xl sm:text-base md:text-2xl lg:text-3xl">Консультируем на протяжении всех стадий работы. </TextImageDescription>
             </TextImageContent>
           </TextImage>
 
@@ -106,7 +106,7 @@ const Index = () => {
             <img className="h-64 w-full h-full object-cover" src={img7} alt="Random image" />
             <div className="absolute inset-0 bg-gray-700 opacity-60" />
             <TextImageContent>
-              <TextImageDescription className="text-3xl max-md:text-2xl max-sm:text-1xl">Стоимость ниже чем у конкурентов.</TextImageDescription>
+              <TextImageDescription className="text-2xl sm:text-base md:text-2xl lg:text-3xl">Стоимость ниже чем у конкурентов.</TextImageDescription>
             </TextImageContent>
           </TextImage>
 
@@ -114,7 +114,7 @@ const Index = () => {
             <img className="h-64 w-full h-full object-cover" src={img8} alt="Random image" />
             <div className="absolute inset-0 bg-gray-700 opacity-60" />
             <TextImageContent>
-              <TextImageDescription className="text-3xl max-md:text-2xl max-sm:text-1xl">Обширная сеть доставки по всему миру.</TextImageDescription>
+              <TextImageDescription className="text-2xl sm:text-base md:text-2xl lg:text-3xl">Обширная сеть доставки по всему миру.</TextImageDescription>
             </TextImageContent>
           </TextImage>
         </div>
@@ -138,7 +138,7 @@ const Index = () => {
 
             </div>
             <div className="mt-6 m-auto space-y-6 w-full">
-              <p className="text-center text-2xl max-sm:text 1x1 text-black">
+              <p className="text-center text-2xl 1x1 text-black">
                 Один из самых популярных пластиков. Экологически чисты, быстроразлогаемый и биосовместим. Повсеместно используется для создания игрушек, сувениров и быстроразлогаемых вещей.
               </p>
             </div>
@@ -153,7 +153,7 @@ const Index = () => {
 
             </div>
             <div className="mt-6 m-auto space-y-6 w-full">
-              <p className="text-center text-2xl max-sm:text-base text-black">
+              <p className="text-center text-2xl  text-black">
                 Пластик, используемый в инженерных целях. Имеет высокую ударопрочность, механическую прочность и жесткость. Обезпечивает долгоживучесть изделий и позволяет его реставрировать.
               </p>
             </div>
@@ -168,7 +168,7 @@ const Index = () => {
 
             </div>
             <div className="mt-6 m-auto space-y-6 w-full">
-              <p className="text-center text-2xl max-sm:text 1x1 text-black">
+              <p className="text-center text-2xl 1x1 text-black">
                 Высокопрочный, износостойкий материал, обладающий высокой температурой плавленияи абсолютно не токсичен и безвреден. Из-за чего его используют посеместно для создание бытовых вещей от посуды до тар для хранения химических веществ.
               </p>
             </div>

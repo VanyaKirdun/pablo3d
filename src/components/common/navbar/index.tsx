@@ -24,17 +24,21 @@ const Navbar = () => {
   const location = useLocation();
   const navigate = useNavigate();
   const [isOpen, setIsOpen] = useState(false);
+  const [slideStatus, setSlideStatus] = useState(false);
   const clickRef = React.useRef(null);
 
-  const hideMenuHandle = () => {
-
+  const hideMenuHandle = (status: boolean) => {
+    setIsOpen(status)
+    setTimeout(() => {
+      setSlideStatus(status)
+    }, 0);
   }
 
-  useClickAway(clickRef, () => setIsOpen(false));
+  useClickAway(clickRef, () => hideMenuHandle(false));
 
   useLayoutEffect(() => {
     function updateSize() {
-      setIsOpen(false)
+      hideMenuHandle(false)
     }
     window.addEventListener('resize', updateSize);
     updateSize();
@@ -57,7 +61,7 @@ const Navbar = () => {
           </Link>
         </div>
 
-        <div className="hidden md:flex text-base text-white ml-auto w-auto gap-3 flex-wrap 2xl:flex-nowrap">
+        <div className="max-sm:hidden flex items-center text-base text-white ml-auto w-auto gap-3">
           {navbarRoutes.map((route) => (
             <Link
               key={route.path}
@@ -74,19 +78,26 @@ const Navbar = () => {
             <LanguageSelector />
           </div>
 
-          <button ref={clickRef} className="sm:hidden cursor-pointer ml-5" onClick={() => setIsOpen(!isOpen)}>
+          <button ref={clickRef} className="sm:hidden cursor-pointer ml-5" onClick={() => hideMenuHandle(!isOpen)}>
             <svg className="w-5 h-5 text-[#eee]" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
               <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M1 1h15M1 7h15M1 13h15" />
             </svg>
           </button>
         </div>
 
-        <div className={cn("shadow-lg opacity-0 transition transform-left absolute left-0 top-full w-full bg-(--color-background)", isOpen && 'opacity-100 transform-zero')}>
-          <div className="space-y-1 px-2 pt-2 pb-3">
-            <a href="#" className="block rounded-md bg-gray-900 px-3 py-2 text-base font-medium text-white" aria-current="page">Dashboard</a>
-            <a href="#" className="block rounded-md px-3 py-2 text-base font-medium hover:bg-gray-700 hover:text-white">Team</a>
-            <a href="#" className="block rounded-md px-3 py-2 text-base font-medium hover:bg-gray-700 hover:text-white">Projects</a>
-            <a href="#" className="block rounded-md px-3 py-2 text-base font-medium hover:bg-gray-700 hover:text-white">Calendar</a>
+        <div className="absolute left-0 w-full top-full overflow-hidden">
+          <div className={cn("sm:hidden shadow-lg opacity-0 transition transform-left w-full bg-(--color-background)", isOpen && 'block', slideStatus && 'opacity-100 transform-zero')}>
+            <div className="space-y-1 px-2 pt-2 pb-3">
+              {navbarRoutes.map((route) => (
+                <Link
+                  key={route.path}
+                  to={route.path}
+                  className={`${location.pathname === route.path ? "text-white bg-gray-900" : "hover:bg-gray-700 hover:text-white"} block rounded-md px-3 py-2 text-base font-medium`}
+                >
+                  {route.name}
+                </Link>
+              ))}
+            </div>
           </div>
         </div>
 
