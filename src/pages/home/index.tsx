@@ -7,8 +7,11 @@ import img5 from '@/assets/20210113_170427.jpg'
 import img6 from '@/assets/18_teach.jpg'
 import img7 from '@/assets/howtopaychinesesuppliersbybanktransfertt.jpg'
 import img8 from '@/assets/156618248-carte-avec-vol-d-avions-voyagez-dans-le-monde-en-avion-route-de-la-compagnie-aérienne-avec-trajectoi.jpg'
+import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 const Index = () => {
+  const { t, i18n } = useTranslation();
   return (
     <>
       <main className="sm:p-10">
@@ -17,7 +20,7 @@ const Index = () => {
             <img className="inset-0 w-full h-full object-cover" src={img1} alt="Random image" />
             <div className="absolute inset-0 bg-gray-700 opacity-60" />
             <TextImageContent>
-              <TextImageTitle>3D печать</TextImageTitle>
+              <TextImageTitle>{t('main.title.title1')}</TextImageTitle>
             </TextImageContent>
           </TextImage>
 
@@ -25,7 +28,7 @@ const Index = () => {
             <img className="h-64 w-full h-full object-cover" src={img2} alt="Random image" />
             <div className="absolute inset-0 bg-gray-700 opacity-60" />
             <TextImageContent>
-              <TextImageTitle>На любой вкус</TextImageTitle>
+              <TextImageTitle>{t('main.title.title2')}</TextImageTitle>
             </TextImageContent>
           </TextImage>
         </div>
@@ -34,13 +37,13 @@ const Index = () => {
           <div className="mt-6 m-auto space-y-6 w-full sm:w-8/12 md:w-7/12">
             <h1
               className="text-center text-3xl max-sm:text-2xl sm:text-4xl md:text-5xl font-bold text-black">
-              Мечтаете создать свою 3D фигурку?
+              {t('main.dream.title')}
             </h1>
 
           </div>
           <div className="mt-6 m-auto space-y-6 w-full sm:w-9/12 md:w-11/12">
             <p className="text-center text-2xl max-sm:text-base text-black">
-              Мы предлагаем печать различных 3D фигур на ваш выбор. Начиная от пластиковых деталей как для автомобилей и резличной техники, до украшений и миниатюр из игры, фильмов или из вашей фантазии.
+              {t('main.dream.description')}
             </p>
           </div>
         </div>
@@ -49,7 +52,7 @@ const Index = () => {
           <div className="mt-6 m-auto space-y-6 w-full sm:w-8/12 md:w-7/12">
             <h1
               className="text-center text-3xl sm:text-4xl md:text-5xl font-bold text-black">
-              Как работаем?
+              {t('main.workPlan.title')}
             </h1>
           </div>
         </div>
@@ -59,8 +62,8 @@ const Index = () => {
             <img className="w-full h-full object-cover" src={img3} alt="Random image" />
             <div className="absolute inset-0 bg-gray-700 opacity-60" />
             <TextImageContent>
-              <TextImageTitle className="max-md:text-3xl md:text-3xl lg:text-5xl">Моделируем</TextImageTitle>
-              <TextImageDescription>Присылаете свою идею и мы создаем 3д модель. </TextImageDescription>
+              <TextImageTitle className="max-md:text-3xl md:text-3xl lg:text-5xl">{t('main.workPlan.picture1.title')}</TextImageTitle>
+              <TextImageDescription>{t('main.workPlan.picture1.description')} </TextImageDescription>
             </TextImageContent>
           </TextImage>
 
@@ -68,8 +71,8 @@ const Index = () => {
             <img className="h-64 w-full h-full object-cover" src={img4} alt="Random image" />
             <div className="absolute inset-0 bg-gray-700 opacity-60" />
             <TextImageContent>
-              <TextImageTitle className="max-md:text-3xl md:text-3xl lg:text-5xl">3D печать</TextImageTitle>
-              <TextImageDescription>Отправляем погдготовленную модель на печать.</TextImageDescription>
+              <TextImageTitle className="max-md:text-3xl md:text-3xl lg:text-5xl">{t('main.workPlan.picture2.title')}</TextImageTitle>
+              <TextImageDescription>{t('main.workPlan.picture2.description')}</TextImageDescription>
             </TextImageContent>
           </TextImage>
 
@@ -77,8 +80,8 @@ const Index = () => {
             <img className="h-64 w-full h-full object-cover" src={img5} alt="Random image" />
             <div className="absolute inset-0 bg-gray-700 opacity-60" />
             <TextImageContent>
-              <TextImageTitle className="max-md:text-3xl md:text-3xl lg:text-5xl">Готово</TextImageTitle>
-              <TextImageDescription>Покраска и подготовка модели к отправке.</TextImageDescription>
+              <TextImageTitle className="max-md:text-3xl md:text-3xl lg:text-5xl">{t('main.workPlan.picture3.title')}</TextImageTitle>
+              <TextImageDescription>{t('main.workPlan.picture3.description')}</TextImageDescription>
             </TextImageContent>
           </TextImage>
         </div>
@@ -87,7 +90,7 @@ const Index = () => {
           <div className="mt-6 m-auto space-y-6 w-full sm:w-8/12 md:w-7/12">
             <h1
               className="text-center text-3xl sm:text-4xl md:text-5xl font-bold text-black">
-              Почему мы?
+              {t('main.whyWe.title')}
             </h1>
           </div>
         </div>
@@ -98,7 +101,7 @@ const Index = () => {
             <img className="inset-0 w-full h-full object-cover" src={img6} alt="Random image" />
             <div className="absolute inset-0 bg-gray-700 opacity-60" />
             <TextImageContent>
-              <TextImageDescription className="text-2xl sm:text-base md:text-2xl lg:text-3xl">Консультируем на протяжении всех стадий работы. </TextImageDescription>
+              <TextImageDescription className="text-2xl sm:text-base md:text-2xl lg:text-3xl">{t('main.whyWe.picture1.title')}</TextImageDescription>
             </TextImageContent>
           </TextImage>
 
@@ -106,7 +109,7 @@ const Index = () => {
             <img className="h-64 w-full h-full object-cover" src={img7} alt="Random image" />
             <div className="absolute inset-0 bg-gray-700 opacity-60" />
             <TextImageContent>
-              <TextImageDescription className="text-2xl sm:text-base md:text-2xl lg:text-3xl">Стоимость ниже чем у конкурентов.</TextImageDescription>
+              <TextImageDescription className="text-2xl sm:text-base md:text-2xl lg:text-3xl">{t('main.whyWe.picture2.title')}</TextImageDescription>
             </TextImageContent>
           </TextImage>
 
@@ -114,7 +117,7 @@ const Index = () => {
             <img className="h-64 w-full h-full object-cover" src={img8} alt="Random image" />
             <div className="absolute inset-0 bg-gray-700 opacity-60" />
             <TextImageContent>
-              <TextImageDescription className="text-2xl sm:text-base md:text-2xl lg:text-3xl">Обширная сеть доставки по всему миру.</TextImageDescription>
+              <TextImageDescription className="text-2xl sm:text-base md:text-2xl lg:text-3xl">{t('main.whyWe.picture3.title')}</TextImageDescription>
             </TextImageContent>
           </TextImage>
         </div>
@@ -123,7 +126,7 @@ const Index = () => {
           <div className="mt-6 m-auto space-y-6 w-full sm:w-8/12 md:w-7/12">
             <h1
               className="text-center text-3xl sm:text-4xl md:text-5xl font-bold text-black">
-              Чем печатаем?
+              {t('main.printMaterial.title')}
             </h1>
           </div>
         </div>
@@ -133,13 +136,13 @@ const Index = () => {
             <div className="mt-6 m-auto space-y-6 w-full ">
               <h1
                 className="text-center text-3xl font-bold text-black">
-                PLA
+                {t('main.printMaterial.material1.title')}
               </h1>
 
             </div>
             <div className="mt-6 m-auto space-y-6 w-full">
               <p className="text-center text-2xl 1x1 text-black">
-                Один из самых популярных пластиков. Экологически чисты, быстроразлогаемый и биосовместим. Повсеместно используется для создания игрушек, сувениров и быстроразлогаемых вещей.
+                {t('main.printMaterial.material1.description')}
               </p>
             </div>
           </div>
@@ -148,13 +151,13 @@ const Index = () => {
             <div className="mt-6 m-auto space-y-6 w-full ">
               <h1
                 className="text-center text-3xl font-bold text-black">
-                ABS
+                {t('main.printMaterial.material2.title')}
               </h1>
 
             </div>
             <div className="mt-6 m-auto space-y-6 w-full">
               <p className="text-center text-2xl  text-black">
-                Пластик, используемый в инженерных целях. Имеет высокую ударопрочность, механическую прочность и жесткость. Обезпечивает долгоживучесть изделий и позволяет его реставрировать.
+                {t('main.printMaterial.material2.description')}
               </p>
             </div>
           </div>
@@ -163,26 +166,26 @@ const Index = () => {
             <div className="mt-6 m-auto space-y-6 w-full ">
               <h1
                 className="text-center text-3xl font-bold text-black">
-                PET-G
+                {t('main.printMaterial.material3.title')}
               </h1>
 
             </div>
             <div className="mt-6 m-auto space-y-6 w-full">
               <p className="text-center text-2xl 1x1 text-black">
-                Высокопрочный, износостойкий материал, обладающий высокой температурой плавленияи абсолютно не токсичен и безвреден. Из-за чего его используют посеместно для создание бытовых вещей от посуды до тар для хранения химических веществ.
+                {t('main.printMaterial.material3.description')}
               </p>
             </div>
           </div>
         </div>
 
         <div className="h-[80px] mt-10 max-sm:px-10">
-          <a href="">
+          <Link to="/contacts">
             <button
               type="button"
               className="h-full w-full bg-[#93ADAA] rounded text-white text-2xl">
-              Связаться с нами
+              {t('main.contactUs')}
             </button>
-          </a>
+          </Link>
         </div>
 
       </main >

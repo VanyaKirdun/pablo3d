@@ -1,5 +1,5 @@
 {
-	"include": ["./"],
+	"include": ["./", "src", "src/**/*.json"],
 	"compilerOptions": {
 		"baseUrl": ".",
 		"outDir": "dist",

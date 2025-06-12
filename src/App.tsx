@@ -10,6 +10,7 @@ function App() {
 
   const Home = lazy(() => import("@/pages/home"));
   const Examples = lazy(() => import("@/pages/examples"));
+  const Contacts = lazy(() => import("@/pages/contacts"));
 
   return (
     <>
@@ -26,6 +27,12 @@ function App() {
             <Route path="/portfolio" element={
               <Suspense fallback={<LoadingAnimation />}>
                 <Examples />
+              </Suspense>
+            }
+            />
+            <Route path="/contacts" element={
+              <Suspense fallback={<LoadingAnimation />}>
+                <Contacts />
               </Suspense>
             }
             />

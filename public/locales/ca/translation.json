@@ -1,0 +1,75 @@
+{
+  "navbar": {
+    "home": "Inici",
+    "portfolio": "Portafoli",
+    "contacts": "Contactes"
+  },
+  "main": {
+    "title": {
+      "title1": "Impressió 3D",
+      "title2": "Per a tots els gustos"
+    },
+    "dream": {
+      "title": "Somieu a crear la vostra figura 3D?",
+      "description": "Oferim impressió de diverses figures 3D a la vostra elecció. Des de peces de plàstic per a automòbils i maquinària diversa fins a decoracions i miniatures de jocs, pel·lícules o de la vostra imaginació."
+    },
+    "workPlan": {
+      "title": "Com treballem?",
+      "picture1": {
+        "title": "Modelitzem",
+        "description": "Envieu la vostra idea i creem el model 3D."
+      },
+      "picture2": {
+        "title": "Impressió 3D",
+        "description": "Enviem el model preparat a la impressió."
+      },
+      "picture3": {
+        "title": "Llisto",
+        "description": "Pintura i preparació del model per al seu enviament."
+      }
+    },
+    "whyWe": {
+      "title": "Per què nosaltres?",
+      "picture1": {
+        "title": "Assessorem durant totes les fases del procés."
+      },
+      "picture2": {
+        "title": "Preus més baixos que la competència."
+      },
+      "picture3": {
+        "title": "Àmplia xarxa de distribució mundial."
+      }
+    },
+    "printMaterial": {
+      "title": "Amb què imprimim?",
+      "material1": {
+        "title": "PLA",
+        "description": "Un dels plàstics més populars. Ecològic, biodegradable i biocompatible. S'utilitza àmpliament per a la creació de joguines, records i objectes d'un sol ús."
+      },
+      "material2": {
+        "title": "ABS",
+        "description": "Plàstic utilitzat en enginyeria. Té alta resistència a l'impacte, resistència mecànica i rigidesa. Assegura la durabilitat dels productes i permet la seva restauració."
+      },
+      "material3": {
+        "title": "PET-G",
+        "description": "Material d'alta resistència, resistent al desgast, amb alta temperatura de fusió i completament no tòxic i segur. S'utilitza àmpliament per a la creació d'objectes domèstics, des de vaixella fins a contenidors per emmagatzemar substàncies químiques."
+      }
+    },
+    "contactUs": "Contacteu amb nosaltres"
+  },
+  "contacts": {
+    "title": "Contactes",
+    "schedule": {
+      "title": "Horari:",
+      "description": "Dl-vd: 10:00-18:00"
+    },
+    "socials": {
+      "title": "Xarxes socials",
+      "phone": "Telèfon",
+      "Email": "Email",
+      "WhatsApp": "WhatsApp",
+      "Instagram": "Instagram",
+      "TikTok": "TikTok"
+    }
+  }
+}

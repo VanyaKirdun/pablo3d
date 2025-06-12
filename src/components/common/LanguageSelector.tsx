@@ -20,11 +20,13 @@ function FlagIcon({ countryCode = "" }: FlagIconProps) {
 
   if (countryCode === "en") {
     countryCode = "gb";
+  } else if (countryCode === 'ca') {
+    countryCode = 'es-ct'
   }
 
   return (
     <span
-      className={`fi fis w-[24] h-[24] text-[24] rounded-full border-none shadow-0x1 bg-white inline-block mr-2 fi-${countryCode}`}
+      className={`fi fis text-[24] rounded-full border-none shadow-0x1 bg-white inline-block mr-2 fi-${countryCode}`}
     />
   );
 }
@@ -47,10 +49,10 @@ export const LanguageSelector = () => {
   }, []);
 
   const languages: Language[] = [
-    { key: 'es', name: 'Spain' },
-    { key: 'ca', name: 'Catalan' },
-    { key: 'en', name: 'United Kingdom' },
-    { key: 'ru', name: 'Russian' },
+    { key: 'es', name: 'Español' },
+    { key: 'ca', name: 'Català' },
+    { key: 'en', name: 'English' },
+    { key: 'ru', name: 'Русский' },
   ]
 
   const LANGUAGE_SELECTOR_ID = 'language-selector';
@@ -104,7 +106,7 @@ export const LanguageSelector = () => {
         </svg>
       </button>
       {isOpen && <div
-        className="origin-top-right absolute right-0 mt-2 w-96 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5"
+        className="origin-top-right max-sm:fixed absolute right-0 mt-2  max-sm:w-full w-96 md:rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5"
         role="menu"
         aria-orientation="vertical"
         aria-labelledby="language-selector"

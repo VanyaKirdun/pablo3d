@@ -1,0 +1,75 @@
+{
+  "navbar": {
+    "home": "Home",
+    "portfolio": "Portfolio",
+    "contacts": "Contacts"
+  },
+  "main": {
+    "title": {
+      "title1": "3D Printing",
+      "title2": "For Every Taste"
+    },
+    "dream": {
+      "title": "Dreaming of Creating Your Own 3D Figurine?",
+      "description": "We offer printing of various 3D figures of your choice. From plastic parts for cars and various machinery to decorations and miniatures from games, movies, or your imagination."
+    },
+    "workPlan": {
+      "title": "How We Work?",
+      "picture1": {
+        "title": "Modeling",
+        "description": "You send your idea, and we create the 3D model."
+      },
+      "picture2": {
+        "title": "3D Printing",
+        "description": "We send the prepared model for printing."
+      },
+      "picture3": {
+        "title": "Ready",
+        "description": "Painting and preparing the model for shipment."
+      }
+    },
+    "whyWe": {
+      "title": "Why Us?",
+      "picture1": {
+        "title": "We provide consultation throughout all stages of the process."
+      },
+      "picture2": {
+        "title": "Prices lower than competitors."
+      },
+      "picture3": {
+        "title": "Extensive global delivery network."
+      }
+    },
+    "printMaterial": {
+      "title": "What We Print With?",
+      "material1": {
+        "title": "PLA",
+        "description": "One of the most popular plastics. Eco-friendly, biodegradable, and biocompatible. Widely used for creating toys, souvenirs, and disposable items."
+      },
+      "material2": {
+        "title": "ABS",
+        "description": "Plastic used in engineering. Has high impact resistance, mechanical strength, and rigidity. Ensures product durability and allows for restoration."
+      },
+      "material3": {
+        "title": "PET-G",
+        "description": "High-strength, wear-resistant material with a high melting point and is completely non-toxic and safe. Widely used for creating household items, from tableware to containers for storing chemicals."
+      }
+    },
+    "contactUs": "Contact Us"
+  },
+  "contacts": {
+    "title": "Contacts",
+    "schedule": {
+      "title": "Working Hours:",
+      "description": "Mon-Fri: 10:00-18:00"
+    },
+    "socials": {
+      "title": "Social Networks",
+      "phone": "Phone",
+      "Email": "Email",
+      "WhatsApp": "WhatsApp",
+      "Instagram": "Instagram",
+      "TikTok": "TikTok"
+    }
+  }
+}

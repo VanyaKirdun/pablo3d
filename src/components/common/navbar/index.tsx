@@ -4,6 +4,7 @@ import { LanguageSelector } from "../LanguageSelector";
 import React, { useLayoutEffect, useState } from "react";
 import { cn } from "@/utils/cn";
 import { useClickAway } from 'react-use';
+import { useTranslation } from "react-i18next";
 
 
 interface Route {
@@ -12,10 +13,9 @@ interface Route {
 }
 
 const navbarRoutes: Route[] = [
-  { name: "Home", path: "/" },
-  { name: "Portfolio", path: "/portfolio" },
-  { name: "Contacts", path: "/contacts" },
-  { name: "About", path: "/about" }
+  { name: "home", path: "/" },
+  { name: "portfolio", path: "/portfolio" },
+  { name: "contacts", path: "/contacts" },
 ];
 
 
@@ -26,6 +26,7 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [slideStatus, setSlideStatus] = useState(false);
   const clickRef = React.useRef(null);
+  const { t, i18n } = useTranslation();
 
   const hideMenuHandle = (status: boolean) => {
     setIsOpen(status)
@@ -47,11 +48,6 @@ const Navbar = () => {
 
   return (
     <header className="sticky top-0 flex h-16 items-center gap-4 border-b px-4 md:px-6 z-50 shadow-sm bg-black">
-      {/* <div
-        id="navbar-portal"
-        className=""
-      /> */}
-
       <nav ref={clickRef} className="h-full w-full flex justify-between gap-6 text-lg font-medium flex sm:justify-between md:justify-normal md:flex-row md:items-center md:gap-5 md:text-sm lg:gap-6">
         <div className="h-full ">
           <Link
@@ -68,7 +64,7 @@ const Navbar = () => {
               to={route.path}
               className={`${location.pathname === route.path ? "text-[#93ADAA]" : "text-[#eee]"} transition-colors text-nowrap`}
             >
-              {route.name}
+              {t(`navbar.${route.name}`)}
             </Link>
           ))}
         </div>
@@ -92,9 +88,10 @@ const Navbar = () => {
                 <Link
                   key={route.path}
                   to={route.path}
+                  onClick={() => hideMenuHandle(!isOpen)}
                   className={`${location.pathname === route.path ? "text-white bg-gray-900" : "hover:bg-gray-700 hover:text-white"} block rounded-md px-3 py-2 text-base font-medium`}
                 >
-                  {route.name}
+                  {t(`navbar.${route.name}`)}
                 </Link>
               ))}
             </div>

@@ -6,7 +6,7 @@ export const SocialSideBar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className={cn("fixed right-[10px] bottom-[50px] sm:right-[50px] sm:bottom-[100px] overflow-hidden rounded-full")}>
+    <div className={cn("fixed right-[10px] sm:right-[50px] bottom-[100px] overflow-hidden rounded-full")}>
       <div className="relative">
         <button className={cn("absolute bottom-0 opacity-100 transition duration-[300ms] z-[900] outline-none", isOpen && "opacity-0")} onClick={() => { setIsOpen(!isOpen) }}>
           <svg className={cn("size-[67px] mt-[10px] rounded-full transition shadow-lg", isOpen && "rotate-[360deg]")} viewBox="0 0 256 250" version="1.1" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid" fill="#000000">

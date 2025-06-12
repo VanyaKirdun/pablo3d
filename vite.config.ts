@@ -21,6 +21,9 @@ export default defineConfig({
 		}),
 		glsl(),
 	],
+	build: {
+    sourcemap: true,
+  },
 	resolve: {
 		alias: {
 			"@": path.resolve(__dirname, "./src"),

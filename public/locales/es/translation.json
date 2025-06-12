@@ -1,0 +1,75 @@
+{
+  "navbar": {
+    "home": "Inicio",
+    "portfolio": "Portafolio",
+    "contacts": "Contactos"
+  },
+  "main": {
+    "title": {
+      "title1": "Impresión 3D",
+      "title2": "Para todos los gustos"
+    },
+    "dream": {
+      "title": "¿Sueñas con crear tu figura 3D?",
+      "description": "Ofrecemos impresión de diversas figuras 3D a tu elección. Desde piezas de plástico para automóviles y maquinaria diversa hasta decoraciones y miniaturas de juegos, películas o de tu imaginación."
+    },
+    "workPlan": {
+      "title": "¿Cómo trabajamos?",
+      "picture1": {
+        "title": "Modelamos",
+        "description": "Envías tu idea y creamos el modelo 3D."
+      },
+      "picture2": {
+        "title": "Impresión 3D",
+        "description": "Enviamos el modelo preparado a la impresión."
+      },
+      "picture3": {
+        "title": "Listo",
+        "description": "Pintura y preparación del modelo para su envío."
+      }
+    },
+    "whyWe": {
+      "title": "¿Por qué nosotros?",
+      "picture1": {
+        "title": "Asesoramos durante todas las fases del proceso."
+      },
+      "picture2": {
+        "title": "Precios más bajos que la competencia."
+      },
+      "picture3": {
+        "title": "Amplia red de distribución mundial."
+      }
+    },
+    "printMaterial": {
+      "title": "¿Con qué imprimimos?",
+      "material1": {
+        "title": "PLA",
+        "description": "Uno de los plásticos más populares. Ecológico, biodegradable y biocompatible. Se utiliza ampliamente para la creación de juguetes, recuerdos y objetos de un solo uso."
+      },
+      "material2": {
+        "title": "ABS",
+        "description": "Plástico utilizado en ingeniería. Tiene alta resistencia al impacto, resistencia mecánica y rigidez. Asegura la durabilidad de los productos y permite su restauración."
+      },
+      "material3": {
+        "title": "PET-G",
+        "description": "Material de alta resistencia, resistente al desgaste, con alta temperatura de fusión y completamente no tóxico y seguro. Se utiliza ampliamente para la creación de objetos domésticos, desde vajilla hasta contenedores para almacenar sustancias químicas."
+      }
+    },
+    "contactUs": "Contáctanos"
+  },
+  "contacts": {
+    "title": "Contactos",
+    "schedule": {
+      "title": "Horario:",
+      "description": "Lun-vie: 10:00-18:00"
+    },
+    "socials": {
+      "title": "Redes sociales",
+      "phone": "Teléfono",
+      "Email": "Email",
+      "WhatsApp": "WhatsApp",
+      "Instagram": "Instagram",
+      "TikTok": "TikTok"
+    }
+  }
+}

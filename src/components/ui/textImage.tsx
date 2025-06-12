@@ -23,7 +23,7 @@ const TextImageTitle = React.forwardRef<
 >(({ className, ...props }, ref) => (
   <h3
     ref={ref}
-    className={cn("text-white text-5xl max-sm:text-2xl font-bold", className)}
+    className={cn("text-center text-white text-5xl max-sm:text-2xl font-bold", className)}
     {...props}
   />
 ));
