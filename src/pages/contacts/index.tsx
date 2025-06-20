@@ -18,9 +18,9 @@ const Contacts = () => {
             <h2 className="w-full text-center text-3xl font-bold text-black">{t("contacts.socials.title")}</h2>
             <p className="w-full text-center mt-5">
               {t("contacts.socials.phone")}: <Link to={'tel:8800553535'} ><span className="text-[#93ADAA]">+8800553535</span></Link><br />
-              {t("contacts.socials.Email")}: <Link to={'mailto:vanya.kirdun@gmail.com'} ><span className="text-[#93ADAA]">vanya.kirdun@gmail.com</span></Link> <br />
+              {t("contacts.socials.Email")}: <Link to={'mailto:Imprax3D@gmail.com'} ><span className="text-[#93ADAA]">Imprax3D@gmail.com</span></Link> <br />
               {t("contacts.socials.WhatsApp")}: <Link to={'https://wa.me/8800553535'} ><span className="text-[#93ADAA]">+8800553535</span></Link><br />
-              {t("contacts.socials.Instagram")}: <Link to={'https://www.instagram.com/imprax3d/profilecard/?igsh=cjl2YjlyNmJlOGI0'} ><span className="text-[#93ADAA]">vanya.kirdun@gmail.com</span></Link> <br />
+              {t("contacts.socials.Instagram")}: <Link to={'https://www.instagram.com/imprax3d/profilecard/?igsh=cjl2YjlyNmJlOGI0'} ><span className="text-[#93ADAA]">imprax3d</span></Link> <br />
               {t("contacts.socials.TikTok")}: <Link to={'https://www.tiktok.com/@imprax3d?_t=ZN-8wiHwH34M78&_r=1'} ><span className="text-[#93ADAA]">@imprax3d</span></Link>
             </p>
           </div>

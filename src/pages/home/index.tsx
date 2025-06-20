@@ -5,8 +5,8 @@ import img3 from '@/assets/3D-modelirovanie-mototsikla.png'
 import img4 from '@/assets/hq720.jpg'
 import img5 from '@/assets/20210113_170427.jpg'
 import img6 from '@/assets/18_teach.jpg'
-import img7 from '@/assets/howtopaychinesesuppliersbybanktransfertt.jpg'
-import img8 from '@/assets/156618248-carte-avec-vol-d-avions-voyagez-dans-le-monde-en-avion-route-de-la-compagnie-aérienne-avec-trajectoi.jpg'
+import img7 from '@/assets/office-work-and-deadline-modern-realistic-3d-illustration-colorful-composition-with-laptop-with-efficiency-graph-calendar-coffee-cup-clock-and-f-2J22KF7.jpg'
+import img8 from '@/assets/abs-plastik-dlya-3d-printera.webp'
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 
@@ -175,6 +175,16 @@ const Index = () => {
                 {t('main.printMaterial.material3.description')}
               </p>
             </div>
+          </div>
+        </div>
+
+        <div className="mx-auto flex items-center justify-center mx-10 sm:px-0 sm:w-8/12 md:w-3/12">
+          <div className="mt-6 m-auto space-y-6 w-full ">
+            <h1
+              className="text-center text-3xl font-bold text-black">
+              {t('main.printMaterial.other')}
+            </h1>
+
           </div>
         </div>
 

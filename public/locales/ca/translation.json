@@ -1,72 +1,73 @@
 {
   "navbar": {
     "home": "Inici",
-    "portfolio": "Portafoli",
+    "portfolio": "Portfoli",
     "contacts": "Contactes"
   },
   "main": {
     "title": {
-      "title1": "Impressió 3D",
+      "title1": "Impressió 3D",
       "title2": "Per a tots els gustos"
     },
     "dream": {
-      "title": "Somieu a crear la vostra figura 3D?",
-      "description": "Oferim impressió de diverses figures 3D a la vostra elecció. Des de peces de plàstic per a automòbils i maquinària diversa fins a decoracions i miniatures de jocs, pel·lícules o de la vostra imaginació."
+      "title": "Somies amb crear la teva pròpia figura 3D?",
+      "description": "Oferim impressió de diverses figures 3D al teu gust. Des de peces de plàstic per a cotxes i diferents equips, fins a joieria i miniatures de jocs, pel·lícules o de la teva imaginació."
     },
     "workPlan": {
       "title": "Com treballem?",
       "picture1": {
-        "title": "Modelitzem",
-        "description": "Envieu la vostra idea i creem el model 3D."
+        "title": "Model·lem",
+        "description": "Ens envies la teva idea i creem un model 3D."
       },
       "picture2": {
         "title": "Impressió 3D",
-        "description": "Enviem el model preparat a la impressió."
+        "description": "Enviem el model preparat per imprimir."
       },
       "picture3": {
-        "title": "Llisto",
-        "description": "Pintura i preparació del model per al seu enviament."
+        "title": "Fet",
+        "description": "Pintura i preparació del model per a l'enviament."
       }
     },
     "whyWe": {
       "title": "Per què nosaltres?",
       "picture1": {
-        "title": "Assessorem durant totes les fases del procés."
+        "title": "Aconsellem en totes les etapes del treball."
       },
       "picture2": {
-        "title": "Preus més baixos que la competència."
+        "title": "Gran rapidesa de treball."
       },
       "picture3": {
-        "title": "Àmplia xarxa de distribució mundial."
+        "title": "Només materials de qualitat."
       }
     },
     "printMaterial": {
       "title": "Amb què imprimim?",
       "material1": {
         "title": "PLA",
-        "description": "Un dels plàstics més populars. Ecològic, biodegradable i biocompatible. S'utilitza àmpliament per a la creació de joguines, records i objectes d'un sol ús."
+        "description": "Un dels plàstics més populars. Ecològic, biodegradable i biocompatible. S'utilitza àmpliament per crear joguines, records i elements biodegradables."
       },
       "material2": {
         "title": "ABS",
-        "description": "Plàstic utilitzat en enginyeria. Té alta resistència a l'impacte, resistència mecànica i rigidesa. Assegura la durabilitat dels productes i permet la seva restauració."
+        "description": "Un plàstic emprat amb finalitats d’enginyeria. Té alta resistència a impactes, força mecànica i rigidesa. Assegura llarga durabilitat i permet restauració."
       },
       "material3": {
-        "title": "PET-G",
-        "description": "Material d'alta resistència, resistent al desgast, amb alta temperatura de fusió i completament no tòxic i segur. S'utilitza àmpliament per a la creació d'objectes domèstics, des de vaixella fins a contenidors per emmagatzemar substàncies químiques."
-      }
+        "title": "PET‑G",
+        "description": "Material d’alta resistència, durador i amb alta temperatura de fusió, absolutament no tòxic i inofensiu. Per això s’utilitza àmpliament per a objectes domèstics, des de vaixella fins a contenidors per a productes químics."
+      },
+      "other": "I molts altres"
     },
-    "contactUs": "Contacteu amb nosaltres"
+    "contactUs": "Contacta amb nosaltres"
   },
   "contacts": {
     "title": "Contactes",
     "schedule": {
       "title": "Horari:",
-      "description": "Dl-vd: 10:00-18:00"
+      "description": "Dl–Dv: 10:00–18:00"
     },
     "socials": {
       "title": "Xarxes socials",
       "phone": "Telèfon",
-      "Email": "Email",
+      "Email": "Correu electrònic",
       "WhatsApp": "WhatsApp",
       "Instagram": "Instagram",
       "TikTok": "TikTok"

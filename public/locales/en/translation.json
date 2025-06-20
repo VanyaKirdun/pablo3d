@@ -10,61 +10,62 @@
       "title2": "For Every Taste"
     },
     "dream": {
-      "title": "Dreaming of Creating Your Own 3D Figurine?",
-      "description": "We offer printing of various 3D figures of your choice. From plastic parts for cars and various machinery to decorations and miniatures from games, movies, or your imagination."
+      "title": "Dreaming of creating your own 3D figure?",
+      "description": "We offer printing of various 3D figures of your choice. From plastic parts for cars and various equipment, to jewelry and miniatures from games, movies or from your imagination."
     },
     "workPlan": {
-      "title": "How We Work?",
+      "title": "How do we work?",
       "picture1": {
-        "title": "Modeling",
-        "description": "You send your idea, and we create the 3D model."
+        "title": "We model",
+        "description": "You send your idea and we create a 3D model."
       },
       "picture2": {
-        "title": "3D Printing",
+        "title": "3D printing",
         "description": "We send the prepared model for printing."
       },
       "picture3": {
-        "title": "Ready",
+        "title": "Done",
         "description": "Painting and preparing the model for shipment."
       }
     },
     "whyWe": {
-      "title": "Why Us?",
+      "title": "Why choose us?",
       "picture1": {
-        "title": "We provide consultation throughout all stages of the process."
+        "title": "We consult at all stages of work."
       },
       "picture2": {
-        "title": "Prices lower than competitors."
+        "title": "High speed of work."
       },
       "picture3": {
-        "title": "Extensive global delivery network."
+        "title": "Only quality materials."
       }
     },
     "printMaterial": {
-      "title": "What We Print With?",
+      "title": "What materials do we print with?",
       "material1": {
         "title": "PLA",
-        "description": "One of the most popular plastics. Eco-friendly, biodegradable, and biocompatible. Widely used for creating toys, souvenirs, and disposable items."
+        "description": "One of the most popular plastics. Environmentally friendly, biodegradable and biocompatible. Widely used for creating toys, souvenirs, and biodegradable items."
       },
       "material2": {
         "title": "ABS",
-        "description": "Plastic used in engineering. Has high impact resistance, mechanical strength, and rigidity. Ensures product durability and allows for restoration."
+        "description": "A plastic used for engineering purposes. It has high impact resistance, mechanical strength, and rigidity. Ensures long-lasting products and allows restoration."
       },
       "material3": {
-        "title": "PET-G",
-        "description": "High-strength, wear-resistant material with a high melting point and is completely non-toxic and safe. Widely used for creating household items, from tableware to containers for storing chemicals."
-      }
+        "title": "PET‑G",
+        "description": "A high‑strength, wear‑resistant material with a high melting temperature, absolutely non‑toxic and harmless. That’s why it’s used everywhere for creating household items from dishes to containers for storing chemicals."
+      },
+      "other": "And many others"
     },
-    "contactUs": "Contact Us"
+    "contactUs": "Contact us"
   },
   "contacts": {
     "title": "Contacts",
     "schedule": {
-      "title": "Working Hours:",
-      "description": "Mon-Fri: 10:00-18:00"
+      "title": "Working hours:",
+      "description": "Mon–Fri: 10:00–18:00"
     },
     "socials": {
-      "title": "Social Networks",
+      "title": "Social Media",
       "phone": "Phone",
       "Email": "Email",
       "WhatsApp": "WhatsApp",
