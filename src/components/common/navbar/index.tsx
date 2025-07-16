@@ -53,7 +53,7 @@ const Navbar = () => {
           <Link
             to={"/"}
           >
-            <img className="h-full w-full" src={logo} alt='Logo' />
+            <img className="h-full" src={logo} alt='Logo' />
           </Link>
         </div>
 
